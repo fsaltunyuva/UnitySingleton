@@ -15,7 +15,7 @@ public class Singleton : MonoBehaviour
         else // Otherwise, set the instance to me and don't destroy me.
         { 
             Instance = this; 
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); // This will keep the Singleton object alive between scenes.
         } 
     }
 }
